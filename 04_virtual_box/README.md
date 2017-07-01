@@ -62,12 +62,11 @@ Now the question is how do you put code that you write to the Virtual Machine in
 
 ## Share host folder inside a virtual Machine run from Virtual Box
 
-1. First you need to mount Guest Additions CD in your host system.
-
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/6.png">
 </div>
 
+1. Mount the Guest Additions CD in your host system.
 1. Install kernel headers (installer needs them to build the kernel module):
 
 	```
