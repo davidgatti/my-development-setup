@@ -96,28 +96,28 @@ Now the question is how do you put code that you write to the Virtual Machine in
 ## How to share a macOS folder with Linux through Virtual Box
 
 1. First you'll need to install the Guest Additions package from Virtual Box.
-1. Then, power off the virtual machine
-1. Create a folder on macOS that you want to share with your virtual machine
+2. Then, power off the virtual machine
+3. Create a folder on macOS that you want to share with your virtual machine
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/7.png">
 </div>
 
-1. Open the Settign section of your virtual machine
-1. Go to the Sharde Folders tab
-1. Click on the + folder
-1. From the drop down menu, select the folder that is on your macOS
-1. Name it hoewver you want, the name can be different form the folder name on your macOS
-1. Select Make Permanent if you have such option, so the folder will be alwasy mounted
+4. Open the Settign section of your virtual machine
+5. Go to the Sharde Folders tab
+6. Click on the + folder
+7. From the drop down menu, select the folder that is on your macOS
+8. Name it hoewver you want, the name can be different form the folder name on your macOS
+9. Select Make Permanent if you have such option, so the folder will be alwasy mounted
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/8.png">
 </div>
 
-1. Click OK.
-1. Now, boot your virtual machine
-1. Create a new folder wherewer you like with mkdir
-1. Once the new fodler is done, type the following:
+10. Click OK.
+11. Now, boot your virtual machine
+12. Create a new folder wherewer you like with mkdir
+13. Once the new fodler is done, type the following:
 
 ```
 sudo mount -t vboxsf folder_name path_to_mount_point
