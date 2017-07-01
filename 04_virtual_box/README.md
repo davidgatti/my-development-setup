@@ -6,9 +6,9 @@ Inside Debian I also use Docker for further organization. In the beginning I tri
 
 ## How to connect to Virtual Box
 
-At first what I was doing was, using the NAT Network option so VB basically was part of the localhost address space, so to reach let say Redis you could just use redis://localhost:6379 from the host machine, but the Virtual Box would forward the request inside Debina. This way no matter if you were connected to a network or not I was able to connect to my VB with no problems.
+At first what I was doing was, using the NAT Network option so VB basically was part of the localhost address space, so to reach let say Redis you could just use `redis://localhost:6379` from the host machine, but the Virtual Box would forward the request inside Debina. This way no matter if you were connected to a network or not I was able to connect to my VB with no problems.
 
-But when I decided to use a reverse proxy like Nginx, it became clear that I won't be able to use this setup, because I was unable to use port 80. macOS won’t allow it and change this behavior would decrease security of my system. At first I used port 8080 so I would have to type google.loc:8080, but this approach was so unclean, that I decided to find a better solution.
+But when I decided to use a reverse proxy like Nginx, it became clear that I won't be able to use this setup, because I was unable to use port 80. macOS won’t allow it and change this behavior would decrease security of my system. At first I used port 8080 so I would have to type `http://google.loc:8080`, but this approach was so unclean, that I decided to find a better solution.
 
 Thankfully you can configure VirtualBox to have a fixed IP no matter the network you connect to. Because if you were to use the “Bridge Adapter” option, yes the running system would get an IP from your home router, but then if you were to go to a different network your VB system would get a different IP, meaning you would have to change for example your /etc/hosts file each time. Super annoying.
 
@@ -78,15 +78,21 @@ How to install Virtual Box Guest Additions on Linux
 1. From the virtual machine window select Devices > Insert Guest Additions CD Image
 1. Mount the CD-ROM
 
+	```
 	sudo mount /dev/cdrom /media/cdrom
+	```
 
 1. Go to the mounted CD-ROM
 
+	```
 	cd /media/cdrom
+	```
 
 1. Run the installer
 
+	```
 	sudo ./VBoxLinuxAdditions.run
+	```
 
 ## How to share a macOS folder with Linux through Virtual Box
 
@@ -122,7 +128,9 @@ where folder_name is the name that you given in the settign page, and path_to_mo
 
 How to mount the folder form the host in to a folder inside VirtualBox
 
-`mount -t vboxsf GitHub-VM /home/$(users)/Documents -o uid=$(users) -o gid=$(users)`
+```
+mount -t vboxsf GitHub-VM /home/$(users)/Documents -o uid=$(users) -o gid=$(users)
+```
 
 ## How to enable symlink in a shared folder
 

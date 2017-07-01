@@ -22,9 +22,9 @@ So yes, when it comes to custom domains, just do this in your /etc/hosts file an
 
 ## How to setup Nginx as a simple reverse proxy for development
 
-On a Debian installation this process if straight forward. You just type this
+On a Debian installation this process if straight forward. You just type this:
 
-`sudo apt-get install nginx`
+	sudo apt-get install nginx
 
 After you do this Ngnix will use SystemD to manage its process, and so this are some useful commands that will help you manage the server
 
