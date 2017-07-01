@@ -7,7 +7,7 @@ I’m very weary of my system resources, especially now days where all the new d
 So, less Apps equals more resources to do my job and at this moment this is what I have on my system:
 
 Development
-- <a href="http://appstore.com/mac/inet" target="_blank">iNet Network Scanner</a>
+- [link iNet Network Scanner](http://appstore.com/mac/inet){:target="_blank"}
 - <a href="https://www.sublimetext.com" target="_blank">Sublime Text</a>
 - <a href="https://www.virtualbox.org/wiki/VirtualBox" target="_blank">Virtual Box</a>
 - <a href="https://www.sequelpro.com" target="_blank">Sequel Pro</a>
