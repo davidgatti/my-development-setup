@@ -22,19 +22,27 @@ Open up VirtualBox and go to general Preference window of VB. From the new windo
 
 And select the DHCP Server table where you are going to uncheck the Enable Server option. On the adapter view, next to the DHCP Server tab. You can either change the IP to one that you like better, or remember the default one.
 
-![Virtual Box DHCP Server](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/2.png)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/2.png">
+</div>
 
 By the way this won’t be the IP of the server once it’s going to be running. The IP is the one that you are login to set in the next step.
 
-![Virtual Box Adapter](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/3.png)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/3.png">
+</div>
 
 This is were the general settings for VirtualBox, it is time to edit the Network settings for your virtual machine. Once you open the setting page, to the Network tab, select the Adapter 1 and select the NAT option from the drop down menu for the Attached to piton. This way the virtual machine will have access to the internet
 
-![Virtual Box Adapter 2](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/4.png)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/4.png">
+</div>
 
 On Adapter 2 tab, choose Host-only Adapter from the drop down menu for the Attached to option, and then in the Name option select the cart that we created in the previous step
 
-![Virtual Box Adapter 2](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/5.png)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/5.png">
+</div>
 
 Now you can start your server with the window where you can log-in to the machine, where you are login to edit the following file: `sudo nano /etc/network/interfaces`, and where at the end of the file you are going to write the following:
 
@@ -58,7 +66,9 @@ Share host folder inside a virtual Machine run from Virtual Box
 
 How to install Virtual Box Guest Additions on Linux
 
-![Virtual Box Share Folder](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/6.png)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/6.png">
+</div>
 
 1. Install kernel headers (installer needs them to build the kernel module):
 
@@ -84,7 +94,9 @@ How to install Virtual Box Guest Additions on Linux
 1. Then, power off the virtual machine
 1. Create a folder on macOS that you want to share with your virtual machine
 
-![Virtual Box Share Folder Path](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/7.png)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/7.png">
+</div>
 
 1. Open the Settign section of your virtual machine
 1. Go to the Sharde Folders tab
@@ -93,7 +105,9 @@ How to install Virtual Box Guest Additions on Linux
 1. Name it hoewver you want, the name can be different form the folder name on your macOS
 1. Select Make Permanent if you have such option, so the folder will be alwasy mounted
 
-![Virtual Box Share Folder Dir](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/8.png)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/8.png">
+</div>
 
 1. Click OK.
 1. Now, boot your virtual machine
@@ -114,4 +128,6 @@ How to mount the folder form the host in to a folder inside VirtualBox
 
 By default when you share a folder from your host machine that hosts VirtualBox to a system inside VirtualBox, symlinking ins not supported. This is ok for the majority of the time but for example with NodeJS, when you install a modules using NPM, then symlinking is crucial. In this case, the line bellow allows you to enable symlinking in your shared folder.
 
-`VBoxManage setextradata "NAME_OF_YOUR_VM" VBoxInternal2/SharedFoldersEnableSymlinksCreate/NAME_OF_THE_SHARED_FOLDER 1`
+```
+VBoxManage setextradata "NAME_OF_YOUR_VM" VBoxInternal2/SharedFoldersEnableSymlinksCreate/NAME_OF_THE_SHARED_FOLDER 1
+```

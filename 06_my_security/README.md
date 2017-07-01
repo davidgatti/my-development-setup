@@ -15,7 +15,9 @@ For websites I use KeyChain to store all my passwords. I like this solution from
 
 ## Servers
 
-![Disk utility](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/06_my_security/images/1.png)
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/06_my_security/images/1.png">
+</div>
 
 I have dozens of servers that I manage and to remember for each of them the password is unfeasible, so f course I use SSH Key. But I want to avoid the situation that if someone gets access to my laptop they could easily log-in on each server with no problem. Because of this I came up with the following solution:
 
