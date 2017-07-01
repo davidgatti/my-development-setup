@@ -60,11 +60,9 @@ Save the file. Restart the Virtual Machine, and you should be able to access the
 
 Now the question is how do you put code that you write to the Virtual Machine inside Virtual Box. Well you can Share a folder from the host machine inside a Virtual one, nuts, but super cool and simple way to just code with your favorite IDE on your host machine, while your code is being run inside Debian and access you I write with my host browser by connection to the Virtual Machine.
 
-## This is how you do it.
+## Share host folder inside a virtual Machine run from Virtual Box
 
-Share host folder inside a virtual Machine run from Virtual Box
-
-How to install Virtual Box Guest Additions on Linux
+1. First you need to mount Guest Additions CD in your host system.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/6.png">
