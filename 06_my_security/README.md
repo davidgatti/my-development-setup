@@ -15,6 +15,8 @@ For websites I use KeyChain to store all my passwords. I like this solution from
 
 ## Servers
 
+![Disk utility](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/06_my_security/images/1.png)
+
 I have dozens of servers that I manage and to remember for each of them the password is unfeasible, so f course I use SSH Key. But I want to avoid the situation that if someone gets access to my laptop they could easily log-in on each server with no problem. Because of this I came up with the following solution:
 
 For each client that I have I create a disk image using the build in Disk Utility app in macOS, each disk is around 50MB and of course encrypted. Inside the disk I keep all the important secrets like SSL Certs and SSH Keys. This way when I finish working for a client I can unmount the disk, and suddenly you can’t access the servers from my computer. Since the path to the SSH Key in the `.ssh/config` file doesn’t exists anymore, since it points inside a Disk Image.
