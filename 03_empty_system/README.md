@@ -7,30 +7,30 @@ I’m very weary of my system resources, especially now days where all the new d
 So, less Apps equals more resources to do my job and at this moment this is what I have on my system:
 
 Development
-- iNet Network Scanner
-- Sublime Text
-- Virtual Box
-- Sequel Pro
-- Pixelmator
-- ForkLift
-- Postico
-- Tower2
-- Postma - because I have to
-- Chrome - not my main browser, safari is. I use chrome to separate my business life from the private one
-- iTerm
-- Paw - because I chose to
-- VLC
+- <a href="http://appstore.com/mac/inet" target="_blank">iNet Network Scanner</a>
+- <a href="https://www.sublimetext.com" target="_blank">Sublime Text</a>
+- <a href="https://www.virtualbox.org/wiki/VirtualBox" target="_blank">Virtual Box</a>
+- <a href="https://www.sequelpro.com" target="_blank">Sequel Pro</a>
+- <a href="https://itunes.apple.com/us/app/pixelmator/id407963104?mt=12&ign-mpt=uo%3D4" target="_blank">Pixelmator</a>
+- <a href="http://www.binarynights.com/forklift/" target="_blank">ForkLift</a>
+- <a href="https://itunes.apple.com/us/app/postico/id1031280567?ls=1&mt=12" target="_blank">Postico</a>
+- <a href="https://www.git-tower.com/mac/" target="_blank">Tower2</a>
+- <a href="https://www.getpostman.com" target="_blank">Postman</a> - because I have to
+- <a href="https://www.google.com/chrome/index.html" target="_blank">Chrome</a> - not my main browser, safari is. I use chrome to separate my business life from the private one
+- <a href="https://www.iterm2.com" target="_blank">iTerm2</a>
+- <a href="https://paw.cloud" target="_blank">Paw</a> - because I chose to
+- <a href="http://www.videolan.org/vlc/index.html" target="_blank">VLC</a>
 
 Communication
-- Skype
-- Zoom
+- <a href="https://www.skype.com" target="_blank">Skype</a>
+- <a href="https://zoom.us" target="_blank">Zoom</a>
 
 Office
-- World Clock Pro
-- Numbers
-- Pages
+- <a href="https://itunes.apple.com/us/app/world-clock-pro/id393335869?mt=8" target="_blank">World Clock Pro</a>
+- <a href="https://www.apple.com/numbers/" target="_blank">Numbers</a>
+- <a href="https://www.apple.com/pages/" target="_blank">Pages</a>
 
 Other
-- 1Blocker
+- <a href="https://1blocker.com" target="_blank">1Blocker</a>
 
 And this is basically it, everything else that I use comes with macOS.
