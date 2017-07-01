@@ -7,28 +7,28 @@ I’m very weary of my system resources, especially now days where all the new d
 So, less Apps equals more resources to do my job and at this moment this is what I have on my system:
 
 Development
-- Tower2
 - iNet Network Scanner
-- Pixelmator
 - Sublime Text
-- Postico
 - Virtual Box
-- iTerm
-- Postma - because I have to
-- Paw - because I chose to
-- ForkLift
-- VLC
-- Chrome - not my main browser, safari is. I use chrome to separate my business life from the private one
 - Sequel Pro
+- Pixelmator
+- ForkLift
+- Postico
+- Tower2
+- Postma - because I have to
+- Chrome - not my main browser, safari is. I use chrome to separate my business life from the private one
+- iTerm
+- Paw - because I chose to
+- VLC
 
 Communication
 - Skype
 - Zoom
 
 Office
-- Pages
-- Numbers
 - World Clock Pro
+- Numbers
+- Pages
 
 Other
 - 1Blocker
