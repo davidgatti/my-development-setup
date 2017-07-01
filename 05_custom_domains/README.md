@@ -30,23 +30,23 @@ After you do this Ngnix will use SystemD to manage its process, and so this are 
 
 Stop
 
-	`sudo systemctl stop nginx`
+	sudo systemctl stop nginx
 
 Start
 
-	`sudo systemctl start nginx`
+	sudo systemctl start nginx
 
 Restart
 
-	`sudo systemctl restart nginx`
+	sudo systemctl restart nginx
 
 Reaload all the configuration files without stoping the server
 
-	`sudo systemctl reload nginx`
+	sudo systemctl reload nginx
 
 Make sure Nginx stats when the server restarts
 
-	`sudo systemctl enable nginx`
+	sudo systemctl enable nginx
 
 Now you know how to manage the server lest configure it to handle our sites. The main folder where all the configurations files resides is this `/etc/nginx/sites-enabled/`. In the folder I like to create one file per site for example
 
