@@ -10,11 +10,11 @@ At first what I was doing was, using the NAT Network option so VB basically was 
 
 But when I decided to use a reverse proxy like Nginx, it became clear that I won't be able to use this setup, because I was unable to use port 80. macOS won’t allow it and change this behavior would decrease security of my system. At first I used port 8080 so I would have to type `http://google.loc:8080`, but this approach was so unclean, that I decided to find a better solution.
 
-Thankfully you can configure VirtualBox to have a fixed IP no matter the network you connect to. Because if you were to use the “Bridge Adapter” option, yes the running system would get an IP from your home router, but then if you were to go to a different network your VB system would get a different IP, meaning you would have to change for example your /etc/hosts file each time. Super annoying.
+Thankfully you can configure VirtualBox to have a fixed IP no matter the network you connect to. Because if you were to use the “Bridge Adapter” option, yes the running system would get an IP from your home router, but then if you were to go to a different network your VB system would get a different IP, meaning you would have to change for example your `/etc/hosts` file each time. Super annoying.
 
 ## How to set a fixed IP to Virtual Box
 
-Open up VirtualBox and go to general Preference window of VB. From the new window select the Network tab and add a new card. Once aded select it and click the little screw driver icon.
+Open up VirtualBox and go to general Preference window of VB. From the new window select the Network tab and add a new card. Once added select it and click the little screw driver icon.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/1.png">
