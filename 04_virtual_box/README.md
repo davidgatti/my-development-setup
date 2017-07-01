@@ -52,34 +52,43 @@ How to install Virtual Box Guest Additions on Linux
 
 
 1. Install kernel headers (installer needs them to build the kernel module):
+
 `sudo apt-get install -y linux-headers-$(uname -r)`
+
 1. Start the virtual system with a regular window (not windowless)
-2. From the virtual machine window select Devices > Insert Guest Additions CD Image
-3. Mount the CD-ROM
+1. From the virtual machine window select Devices > Insert Guest Additions CD Image
+1. Mount the CD-ROM
+
 `sudo mount /dev/cdrom /media/cdrom`
+
 1. Go to the mounted CD-ROM
+
 `cd /media/cdrom`
+
 1. Run the installer
+
 `sudo ./VBoxLinuxAdditions.run`
 
 ## How to share a macOS folder with Linux through Virtual Box
 
 1. First you'll need to install the Guest Additions package from Virtual Box.
-2. Then, power off the virtual machine
-3. Create a folder on macOS that you want to share with your virtual machine
+1. Then, power off the virtual machine
+1. Create a folder on macOS that you want to share with your virtual machine
 
-4. Open the Settign section of your virtual machine
-5. Go to the Sharde Folders tab
-6. Click on the + folder
-7. From the drop down menu, select the folder that is on your macOS
-8. Name it hoewver you want, the name can be different form the folder name on your macOS
-9. Select Make Permanent if you have such option, so the folder will be alwasy mounted
+1. Open the Settign section of your virtual machine
+1. Go to the Sharde Folders tab
+1. Click on the + folder
+1. From the drop down menu, select the folder that is on your macOS
+1. Name it hoewver you want, the name can be different form the folder name on your macOS
+1. Select Make Permanent if you have such option, so the folder will be alwasy mounted
 
-10. Click OK.
-11. Now, boot your virtual machine
-12. Create a new folder wherewer you like with mkdir
-13. Once the new fodler is done, type the following:
-sudo mount -t vboxsf folder_name path_to_mount_point
+1. Click OK.
+1. Now, boot your virtual machine
+1. Create a new folder wherewer you like with mkdir
+1. Once the new fodler is done, type the following:
+
+`sudo mount -t vboxsf folder_name path_to_mount_point`
+
 where folder_name is the name that you given in the settign page, and path_to_mount_point is the path to the folder that you jsut created in your virtual box.
 
 ## Mount folders
