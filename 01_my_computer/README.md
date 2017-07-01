@@ -1,5 +1,9 @@
 # My computer
 
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/01_my_computer/images/mac_book_air_13.jpeg">
+</div>
+
 We need to start with the device were the work is performed, and my weapon of choice the 13” MacBook Air because of it reliability and Apple support. Since this device helps me make money I need a backup plan that works almost globally. Meaning if it brakes down, it is going to be repaired the next day, if not. I can just buy a new one, log-in and be where I left off.
 
 If you don’t want to use a Apple computer, just pick a PC that have a solid support no matter where you are, and where you can buy the same exact hardware if it fails so you can just restore or reinstall what you need an be developing.
