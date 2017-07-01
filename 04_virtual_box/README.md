@@ -16,7 +16,9 @@ Thankfully you can configure VirtualBox to have a fixed IP no matter the network
 
 Open up VirtualBox and go to general Preference window of VB. From the new window select the Network tab and add a new card. Once aded select it and click the little screw driver icon.
 
+<div align="center">
 ![Virtual Box Network](https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/1.png)
+</div>
 
 And select the DHCP Server table where you are going to uncheck the Enable Server option. On the adapter view, next to the DHCP Server tab. You can either change the IP to one that you like better, or remember the default one.
 
