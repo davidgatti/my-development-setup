@@ -72,7 +72,9 @@ How to install Virtual Box Guest Additions on Linux
 
 1. Install kernel headers (installer needs them to build the kernel module):
 
+	```
 	sudo apt-get install -y linux-headers-$(uname -r)
+	```
 
 1. Start the virtual system with a regular window (not windowless)
 1. From the virtual machine window select Devices > Insert Guest Additions CD Image
@@ -120,7 +122,9 @@ How to install Virtual Box Guest Additions on Linux
 1. Create a new folder wherewer you like with mkdir
 1. Once the new fodler is done, type the following:
 
-`sudo mount -t vboxsf folder_name path_to_mount_point`
+```
+sudo mount -t vboxsf folder_name path_to_mount_point
+```
 
 where folder_name is the name that you given in the settign page, and path_to_mount_point is the path to the folder that you jsut created in your virtual box.
 
