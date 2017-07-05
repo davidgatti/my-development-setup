@@ -4,6 +4,14 @@ Probably you won’t be surprised if I tell you that I don’t run code from my 
 
 Inside Debian I also use Docker for further organization. In the beginning I tried to code my apps inside Docker but after few months of doing that I came to the conclusion that the benefit is minimal and the overhead of doing small changes etc was to much for the befits, so I decided to drop Docker for this particular scenario, and keep it to run servers like SQL type apps, Redis and other things. This way I can have multiple versions for testing in a very simple to manage way.
 
+# Virtualization within macOS instead of VirtualBox. 
+
+Yes VirtualBox is a big beast, and one big downside is that it takes 7GB of space on my SSD (this is the size of my virtual hard drive) despite me using early 1/3 of that. But this to me is a hit that I can take. With VBox I basically have a box, where if I want to get rid of I just need to delete one file, the disk image file. I don’t have to worry about small files trickling here and there. Everything is in the Box so my host system has nothing unnecessary.
+
+In addition with Virtual Box I can mimmic a real server however I want thanks to the infinite network configuration possibilities that VB has. You can do whatever crazy thing will pop in your head, without disrupting any installation - which I love. 
+
+No to mention, If I kill my Virtual Box, nothing is running on my host machine - completely nothing, zero nada. So whenever I want to make sure my battery will last as long as possible I just shot down Virtual Box and I know there is nothing elese running, and this to me is the biggest thing that I like about this setup.
+
 ## How to connect to Virtual Box
 
 At first what I was doing was, using the NAT Network option so VB basically was part of the localhost address space, so to reach let say Redis you could just use `redis://localhost:6379` from the host machine, but the Virtual Box would forward the request inside Debina. This way no matter if you were connected to a network or not I was able to connect to my VB with no problems.
