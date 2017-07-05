@@ -10,8 +10,18 @@ With software this is easier because you can delete an app, and if like get pain
 
 Knowing that this are the things that I purposefully don’t do that other might be doing:
 
-- I don’t care about my dot files. I have a super basic configuration to just show the branch that I’m on Git, but after my latest fresh reinstall of the system I didn’t bother reconfiguring my bash environment, and it seams that I’m fine with it for now. But I see myself login back to this one day
-- I try to avoid Brew like fire. The only time I install something through it I do it to install wget. I don’t use Brew because I don’t like CLI that install things without a visual interface or cue of what goes where. Normally the Unix system is very ease going when it comes to installing things, but annoyingly uninstalling is a very poor experience. Same goes with NPM and installing things globally - I install globally only the bare minimum, which in my case is Nodemon, and my 2 tools that I created ([express-generator-dg](https://www.npmjs.com/package/express-generator-dg), [env-auto](https://www.npmjs.com/package/env-auto)) since life without them would be painful.
-- The cool drop down feature of iTerm2. Yes I don’t use this amazing feature where you can assign a hot key to iTerm2 that once hit it will slide down a terminal window no matter where you are in the system. Cool feature that I used once back in the days, and it never stick with me. I just don’t have the need. Plus I always have a iTerm2 session open in full screen so when I need I just go there and do my thing, plus once I go to the terminal I normal stay there for a longer time then I always anticipate - mmm that black void ;)
+## Dot Files
+
+I don’t care about my dot files. I have a super basic configuration to just show the branch that I’m on Git, but after my latest fresh reinstall of the system I didn’t bother reconfiguring my bash environment, and it seams that I’m fine with it for now. But I see myself login back to this one day
+
+## Brew
+
+I try to avoid Brew like fire. The only time I install something through it I do it to install wget. I don’t use Brew because I don’t like CLI that install things without a visual interface or cue of what goes where. Normally the Unix system is very ease going when it comes to installing things, but annoyingly uninstalling is a very poor experience. Same goes with NPM and installing things globally - I install globally only the bare minimum, which in my case is Nodemon, and my 2 tools that I created ([express-generator-dg](https://www.npmjs.com/package/express-generator-dg), [env-auto](https://www.npmjs.com/package/env-auto)) since life without them would be painful.
+
+## iTerm2 Drop down
+
+The cool drop down feature of iTerm2. Yes I don’t use this amazing feature where you can assign a hot key to iTerm2 that once hit it will slide down a terminal window no matter where you are in the system. Cool feature that I used once back in the days, and it never stick with me. I just don’t have the need. Plus I always have a iTerm2 session open in full screen so when I need I just go there and do my thing, plus once I go to the terminal I normal stay there for a longer time then I always anticipate - mmm that black void ;)
+
+# To sum it up
 
 This are some points that my friend [@sadovnychyi](https://github.com/sadovnychyi) pointed out so for sure I won’t be able to include them all or thing of all the possibilities. So if I didn't mention something here is probably because I had a reason and the reason is that I’m not in pain by not using them. Of course it is possible that I might not know all the possibilities out there, in this case feel free to ping me on Twitter @[davidgatti](https://twitter.com/dawidgatti) and let me know what you do that I didn’t mention so I can check it out :)
