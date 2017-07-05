@@ -14,6 +14,7 @@ Table of contents
 - [My Virtual Box setup](https://github.com/davidgatti/my-development-setup/tree/master/04_virtual_box)
 - [My Custom domains setup](https://github.com/davidgatti/my-development-setup/tree/master/05_custom_domains)
 - [My security approach](https://github.com/davidgatti/my-development-setup/tree/master/06_my_security)
+- [What I don't do](https://github.com/davidgatti/my-development-setup/tree/master/07_what_I_dont_that_others_do)
 
 # The End
 
