@@ -1,58 +1,58 @@
 # My Virtual Box
 
-Probably you won’t be surprised if I tell you that I don’t run code from my main operating system, which in my case is macOS. All the code is being run from a Debian, which is inside a Virtual Box installation. This way I keep my main system clean of any servers and weird things that I might have to install for development.
+You probably wouldn’t be surprised to hear that I don’t run code from my main operating system, which in my case is macOS. All of the code is run from Debian, which is inside a Virtual Box installation. This allows me to keep my main system clean of any servers and weird things that I might have to install for development.
 
-Inside Debian I also use Docker for further organization. In the beginning I tried to code my apps inside Docker but after few months of doing that I came to the conclusion that the benefit is minimal and the overhead of doing small changes etc was to much for the befits, so I decided to drop Docker for this particular scenario, and keep it to run servers like SQL type apps, Redis and other things. This way I can have multiple versions for testing in a very simple to manage way.
+Inside Debian, I use Docker for further organization. In the beginning, I tried to code my apps inside Docker. But, after few months, I came to the conclusion that the benefit was minimal and the overhead involved in making small changes was too much, so I decided to drop Docker for this particular scenario, but keep it to run servers like SQL-type apps, Redis, and other things. This way, I can have multiple versions for testing in a very easy-to-manage way.
 
-# Virtualization within macOS instead of VirtualBox. 
+# Virtualization within macOS, rather than VirtualBox
 
-Yes VirtualBox is a big beast, and one big downside is that it takes 7GB of space on my SSD (this is the size of my virtual hard drive) despite me using early 1/3 of that. But this to me is a hit that I can take. With VBox I basically have a box, where if I want to get rid of I just need to delete one file, the disk image file. I don’t have to worry about small files trickling here and there. Everything is in the Box so my host system has nothing unnecessary.
+Yes, VirtualBox is a big beast, and one big downside of that is that it takes up 7GB of space on my SSD (this is the size of my virtual hard drive), although I've used nearly 1/3 of that. To me, this is a hit that I can take. With VBox, I basically have a box from which I can just delete one file and I’m back to a clean system.
 
-In addition with Virtual Box I can mimmic a real server however I want thanks to the infinite network configuration possibilities that VB has. You can do whatever crazy thing will pop in your head, without disrupting any installation - which I love. 
+In addition, Virtual Box allows me to mimic a real server in any way I like, thanks to its infinite network configuration possibilities. You can do whatever crazy thing pops into your head, without disrupting any installation, which I love.
 
-No to mention, If I kill my Virtual Box, nothing is running on my host machine - completely nothing, zero nada. So whenever I want to make sure my battery will last as long as possible I just shot down Virtual Box and I know there is nothing elese running, and this to me is the biggest thing that I like about this setup.
+Also, if I kill my Virtual Box, nothing runs on my host machine - absolutely nothing, zero, nada. So, when I want to be sure that my battery will last as long as possible, I just shoot down Virtual Box.
 
 ## How to connect to Virtual Box
 
-At first what I was doing was, using the NAT Network option so VB basically was part of the localhost address space, so to reach let say Redis you could just use `redis://localhost:6379` from the host machine, but the Virtual Box would forward the request inside Debina. This way no matter if you were connected to a network or not I was able to connect to my VB with no problems.
+At first, I was using the NAT Network option, so VB was basically part of the localhost address space. For example, to reach Redis, you could just use `redis://localhost:6379` from the host machine, but the Virtual Box would forward the request inside Debina. This way, I was able to connect to my VB whether I was connected to a network or not.
 
-But when I decided to use a reverse proxy like Nginx, it became clear that I won't be able to use this setup, because I was unable to use port 80. macOS won’t allow it and change this behavior would decrease security of my system. At first I used port 8080 so I would have to type `http://google.loc:8080`, but this approach was so unclean, that I decided to find a better solution.
+But when I decided to use a reverse proxy like Nginx, it became clear that I wouldn't be able to use this setup, because I was unable to use port 80. macOS won’t allow it, and to change this behavior would decrease system security. At first, I used port 8080, so I would have to type `http://example.loc:8080`, but this approach was so unclean that I decided to find a better solution.
 
-Thankfully you can configure VirtualBox to have a fixed IP no matter the network you connect to. Because if you were to use the “Bridge Adapter” option, yes the running system would get an IP from your home router, but then if you were to go to a different network your VB system would get a different IP, meaning you would have to change for example your `/etc/hosts` file each time. Super annoying.
+Thankfully, you can configure VirtualBox to have a fixed IP, no matter what network you connect to. Because if you were to use the "Bridge Adapter" option, the running system would obtain an IP from your home router. But if you were to go to a different network, your VB system would get a different IP, meaning you would have to change your `/etc/hosts` file each time. Super annoying.
 
 ## How to set a fixed IP to Virtual Box
 
-Open up VirtualBox and go to general Preference window of VB. From the new window select the Network tab and add a new card. Once added select it and click the little screw driver icon.
+Open VirtualBox and go to general Preference window. From there, select the Network tab and add a new card. Once added, select it and click the little screw driver icon.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/1.png">
 </div>
 
-And select the DHCP Server table where you are going to uncheck the Enable Server option. On the adapter view, next to the DHCP Server tab. You can either change the IP to one that you like better, or remember the default one.
+Now select the DHCP Server table, where you're going to uncheck the Enable Server option on the adapter view, next to the DHCP Server tab. You can either change the IP to one that you prefer, or remember the default.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/2.png">
 </div>
 
-By the way this won’t be the IP of the server once it’s going to be running. The IP is the one that you are login to set in the next step.
+By the way, this won’t be the IP of the server when it runs. You'll set the IP in the next step.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/3.png">
 </div>
 
-This is were the general settings for VirtualBox, it is time to edit the Network settings for your virtual machine. Once you open the setting page, to the Network tab, select the Adapter 1 and select the NAT option from the drop down menu for the Attached to piton. This way the virtual machine will have access to the internet
+These are the general settings for VirtualBox, where you can edit the Network settings for your virtual machine. Once you open the settings page, go to the Network tab, select Adapter 1, and then the NAT option from the drop-down menu for the Attached to piton. This provides the virtual machine with internet access.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/4.png">
 </div>
 
-On Adapter 2 tab, choose Host-only Adapter from the drop down menu for the Attached to option, and then in the Name option select the cart that we created in the previous step
+On the Adapter 2 tab, choose Host-only Adapter from the drop down-menu for the Attached to option, and then in the Name option select the cart we created in the previous step.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/5.png">
 </div>
 
-Now you can start your server with the window where you can log-in to the machine, where you are login to edit the following file: `sudo nano /etc/network/interfaces`, and where at the end of the file you are going to write the following:
+Now you can start your server with the window where you can log-in to the machine, and log in to edit the following file: `sudo nano /etc/network/interfaces`. At the end of the file you'll write the following:
 
 ```
 # The fixed IP
@@ -64,29 +64,28 @@ network 192.168.56.0
 broadcast 192.168.56.255
 ```
 
-Save the file. Restart the Virtual Machine, and you should be able to access the server on the 192.168.56.100 IP no matter which network you will connect.
+Save the file and restart the Virtual Machine. You should be able to access the server on the `192.168.56.100` IP, no matter which network you're using.
 
-Now the question is how do you put code that you write to the Virtual Machine inside Virtual Box. Well you can Share a folder from the host machine inside a Virtual one, nuts, but super cool and simple way to just code with your favorite IDE on your host machine, while your code is being run inside Debian and access you I write with my host browser by connection to the Virtual Machine.
+Now the question is this: How do you put code that you've written to the Virtual Machine inside Virtual Box? Well, you can share a folder from the host machine inside the Virtual one. This might seem nuts, but it's a super cool and simple way to just code with your favorite IDE on your host machine, while your code is being run inside Debian.
 
-## Share host folder inside a virtual Machine run from Virtual Box
+## Share host folder inside a Virtual Machine run from Virtual Box
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/6.png">
 </div>
 
+1. Start the virtual system with a regular window (not windowless)
+1. From the virtual machine window select Devices > Insert Guest Additions CD Image
 1. Mount the Guest Additions CD in your host system.
+
+	```
+	sudo mount /dev/cdrom /media/cdrom
+	```
+
 1. Install kernel headers (installer needs them to build the kernel module):
 
 	```
 	sudo apt-get install -y linux-headers-$(uname -r)
-	```
-
-1. Start the virtual system with a regular window (not windowless)
-1. From the virtual machine window select Devices > Insert Guest Additions CD Image
-1. Mount the CD-ROM
-
-	```
-	sudo mount /dev/cdrom /media/cdrom
 	```
 
 1. Go to the mounted CD-ROM
@@ -103,39 +102,38 @@ Now the question is how do you put code that you write to the Virtual Machine in
 
 ## How to share a macOS folder with Linux through Virtual Box
 
-1. First you'll need to install the Guest Additions package from Virtual Box.
-2. Then, power off the virtual machine
-3. Create a folder on macOS that you want to share with your virtual machine
+1. Power off the virtual machine
+2. Create a folder on macOS that you want to share with your virtual machine
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/7.png">
 </div>
 
-4. Open the Settign section of your virtual machine
-5. Go to the Sharde Folders tab
-6. Click on the + folder
-7. From the drop down menu, select the folder that is on your macOS
-8. Name it hoewver you want, the name can be different form the folder name on your macOS
-9. Select Make Permanent if you have such option, so the folder will be alwasy mounted
+3. Open the Settign section of your virtual machine
+4. Go to the Sharde Folders tab
+5. Click on the + folder
+6. From the drop down menu, select the folder that is on your macOS
+7. Name it hoewver you want, the name can be different form the folder name on your macOS
+8. Select Make Permanent if you have such option, so the folder will be alwasy mounted
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/8.png">
 </div>
 
-10. Click OK.
-11. Now, boot your virtual machine
-12. Create a new folder wherewer you like with mkdir
-13. Once the new fodler is done, type the following:
+9. Click OK.
+10. Now, boot your virtual machine
+11. Create a new folder wherewer you like with mkdir
+12. Once the new fodler is done, type the following:
 
 ```
 sudo mount -t vboxsf folder_name path_to_mount_point
 ```
 
-where folder_name is the name that you given in the settign page, and path_to_mount_point is the path to the folder that you jsut created in your virtual box.
+Where `folder_name` is the name that you gave on the Settings page, and path_to_mount_point is the path to the folder that you just created in your Virtual Box.
 
 ## Mount folders
 
-How to mount the folder form the host in to a folder inside VirtualBox
+How to mount the folder from the host in to a folder inside VirtualBox:
 
 ```
 mount -t vboxsf GitHub-VM /home/$(users)/Documents -o uid=$(users) -o gid=$(users)
@@ -143,7 +141,7 @@ mount -t vboxsf GitHub-VM /home/$(users)/Documents -o uid=$(users) -o gid=$(user
 
 ## How to enable symlink in a shared folder
 
-By default when you share a folder from your host machine that hosts VirtualBox to a system inside VirtualBox, symlinking ins not supported. This is ok for the majority of the time but for example with NodeJS, when you install a modules using NPM, then symlinking is crucial. In this case, the line bellow allows you to enable symlinking in your shared folder.
+By default, when you share a folder from your host machine, symlinking is not supported. This is okay most of the time, but with NodeJS, for example, when you install a module using NPM, symlinking is crucial. In this case, the line below allows you to enable symlinking in your shared folder.
 
 ```
 VBoxManage setextradata "NAME_OF_YOUR_VM" VBoxInternal2/SharedFoldersEnableSymlinksCreate/NAME_OF_THE_SHARED_FOLDER 1
