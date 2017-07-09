@@ -1,10 +1,8 @@
 # Keeping the system as empty as possible
 
-As mentioned in the Backup section I do keep the amount of files and also Apps to a minimum. I only have the tools that I need for my work and use as much as possible the Apps that are build in to the system.
+As I mentioned in the Backup section, I keep my files and apps to a minimum. I only have the tools that I need for my work, and I use the system's built-in apps as much as possible.
 
-I’m very weary of my system resources, especially now days where all the new developers that came out the era of the “Apps” grew up with limitless computers, and didn’t have ever to change how their apps works because it was barely working on the their computer. And so there is a lot of software that uses the CPU, dose I/O and fills up RAM for no reason because the developer have a 18 core CPU, a 3GB/s SSD and 128GB of RAM. But I believe that having all this power doesn't mean you can write sloppy code that docents take in account that there is other software that needs those resources.
-
-So, less Apps equals more resources to do my job and at this moment this is what I have on my system:
+So, fewer apps equal more resources to do my job. These are the apps I have on my system at this moment:
 
 Development
 - <a href="http://appstore.com/mac/inet" target="_blank">iNet Network Scanner</a>
@@ -33,4 +31,4 @@ Office
 Other
 - <a href="https://1blocker.com" target="_blank">1Blocker</a>
 
-And this is basically it, everything else that I use comes with macOS.
+And this is basically it. Everything else I use comes with macOS.
