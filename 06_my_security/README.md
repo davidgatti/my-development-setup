@@ -29,16 +29,16 @@ When I need to do some work for a client, I mount the Disk Image and write the p
 
 I think this is a good middle ground solution for security and convenience 🙂.
 
-# how to create a disk/image in macOS
+# How to create a disk/image in macOS
 
 First you need to open the Disk Utility tool, from there select File from the menu bar, New Image, and then Blank Image, or just hit CMD+N. A drop down window will appear with the image options as shown bellow:
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/06_my_security/images/1.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/06_my_security/images/2.png">
 </div>
 
 Write down all your information and in the Encryption drop down select the highest option. A new drop down will show up where you can add the password that will decrypt the image. Remember if you forget this password you are out of luck and won't be able to access the disk again.
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/06_my_security/images/1.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/06_my_security/images/3.png">
 </div>
