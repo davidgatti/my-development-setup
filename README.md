@@ -1,10 +1,11 @@
 # 💻 My Development Setup for my Mac
 
-If you Google "[My Development Setup](https://www.google.com/search?q=My+Development+Setup)" you will find many articles where different developers explain what type of setup they have. But most often then then not they are very superficial with one detailed explanation and the rest are just links to the apps the they have and use. I wanted to do a more comprehensive article where I go in details and provide exact examples of my configuration files and explain also how to setup the tools that I use - in this case mainly how I did setup Virtual Box, Nginx and how I manage custom local domains.
+If you Google "[My Development Setup](https://www.google.com/search?q=My+Development+Setup)", you'll find numerous articles in which various developers explain what type of setup they have. But more often than not, the articles are very superficial, with one detailed explanation and a list of links to the apps they have and use. I wanted to write a more comprehensive article, in which I can go into greater detail, provide specific examples of my configuration files, and explain how to set up the tools I use, including Virtual Box and Nginx, as well as how I manage custom local domains.
 
-# Lets start
 
-Personally I’m a very organized individual, because I believe that by spending the extra time in the beginning will save me huge amount of time down the road. Thus by having a well designed development environment is so important to me. I hope you'll find in this article something interesting.
+# Let's start
+
+Personally, I’m a very organized individual. I believe that spending the extra time in the beginning will save me a huge amount of time down the road, so having a well-designed development environment is so important to me.
 
 Table of contents
 
@@ -18,7 +19,13 @@ Table of contents
 
 # The End
 
-If you've enjoyed this article/project, please consider giving it a 🌟. Also check out my [GitHub account](https://github.com/davidgatti), where I have other articles and apps that you might find interesting.
+If you've enjoyed this article/project, please consider giving it a 🌟 or donate.
+
+- [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/gattidavid/25)
+- [![Star on GitHub](https://img.shields.io/github/stars/davidgatti/my-development-setup.svg?style=social)](https://github.com/davidgatti/How-to-Stream-Movies-using-NodeJS/stargazers)
+- [![Watch on GitHub](https://img.shields.io/github/watchers/davidgatti/my-development-setup.svg?style=social)](https://github.com/davidgatti/How-to-Stream-Movies-using-NodeJS/watchers)
+
+Also check out my [GitHub account](https://github.com/davidgatti), where I have other articles and apps that you might find interesting.
 
 ## Where to follow
 

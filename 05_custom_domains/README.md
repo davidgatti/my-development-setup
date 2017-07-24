@@ -1,8 +1,8 @@
 # How to use custom domain while developing
 
-There are a bunch of tutorials on-line where where they show you how to setup DNSMasQv on macOS, to basically do one thing. Any address ending with a specific root domain like .loc, is being captured and forwarded to the virtual box. You can say, convenient: I don’t have to do anything and whatever I type it will just end up on my dev server. Yes, but that won’t help you much :) Because you’ll need a reverse proxy to allow you to have multiple sites on the virtual server using the port 80. To do so you need to add each domain that you want to in the Nginx configuration, and since you have to do that manually anyway, you might as well just add one extra line to the `/etc/hosts` file. This way you have one less peace of software running on your machine.
+There are a bunch of tutorials online on how to set up DNSMasQv on macOS to basically do one thing. Any address that ends with a specific root domain like .loc, is captured and forwarded to the Virtual Box. You might think, Convenient: I don’t have to do anything, and whatever I type, it will just end up on my dev server. Yes, but that won’t help you much, because you’ll need a reverse proxy to have multiple sites on the virtual server using Port 80. To do so, you need to add each domain in the Nginx configuration, and, since you have to do that manually anyway, you might as well just add one extra line to the `/etc/hosts` file. This way, you'll have one less piece of software running on your machine.
 
-So yes, when it comes to custom domains, just do this in your /etc/hosts file and you will be good.
+So, when it comes to custom domains, just do this in your `/etc/hosts` file, and all will be good.
 
 ```
 ##
@@ -22,11 +22,11 @@ So yes, when it comes to custom domains, just do this in your /etc/hosts file an
 
 ## How to setup Nginx as a simple reverse proxy for development
 
-On a Debian installation this process if straight forward. You just type this:
+On a Debian installation, this process is straight forward. Just type this:
 
 	sudo apt-get install nginx
 
-After you do this Ngnix will use SystemD to manage its process, and so this are some useful commands that will help you manage the server
+After you do this, Ngnix will use SystemD to manage its process. Here are some useful commands to help you manage the server:
 
 Stop
 
@@ -48,13 +48,13 @@ Make sure Nginx stats when the server restarts
 
 	sudo systemctl enable nginx
 
-Now you know how to manage the server lest configure it to handle our sites. The main folder where all the configurations files resides is this `/etc/nginx/sites-enabled/`. In the folder I like to create one file per site for example
+Now you know how to manage the server and configure it to handle our sites. The main folder where all the configuration files reside is `/etc/nginx/sites-enabled/`. In the folder, I like to create one file per site:
 
 - app.example.com
 - login.example.com
 - api.example.com
 
-And inside each file I have a configuration like this:
+Inside each file, I have a configuration like this:
 
 ```
 server {
@@ -96,4 +96,4 @@ server {
 }
 ```
 
-The only difference between the files is the `server_name` option. And the port at which the site is running. Here you see 3000, but you can have multiple sites on any port you like. After you reload the Nginx configuration, Nginx will forward the traffic to the right internal address.
+The only differences between the files are the `server_name` option and the port at which the site is running. Here, you see `3000`, but you can have multiple sites on any port you like. After you reload the Nginx configuration, Nginx will forward the traffic to the right internal address.

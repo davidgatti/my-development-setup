@@ -1,17 +1,31 @@
 # The things that I don't do that other might be doing
 
-If you reached this point for sure there is a big chance that you are thinking to yourself, what about other well established things developer do that I didn't mention here.
+At this point, you might be thinking, *What about other well established things developer do that weren't mentioned here?*
 
-The thing is that I’m a minimalist and try to live my life with as little thing as possible and this rule applies to the physical world and the same for the digital one.
+The thing is, I’m a minimalist, and I try to live my life with as few things as possible. This rule applies to both the physical and digital worlds.
 
-My approach for decided what I keep and what I throw away is pain. Before I left with a small crayon worth of stuff, I did took whatever I thought necessary and put it away, and lived without that thing for am month to see if my live became worst without it, and if after a month I badly remember that I had or used that thing, I would get rid of it.
+My approach to deciding what to keep and what to throw away is pain. Before I left with a small carry-on's worth of stuff, I took what I thought necessary and put it away. I then lived without that item for a month to see if my life became worse without it. After a month, if I didn't miss it, I would get rid of it.
 
-With software this is easier because you can delete an app, and if like get painful and super annoying without that software or configuration, then I know that I need that because the advantage of using is now tangible and I know that my life will get better.
+This process is easier with software, because you can delete an app. If I wind up missing that software or configuration, I know I need it, because its advantages are now tangible, and I know that having it will improve my life.
 
-Knowing that this are the things that I purposefully don’t do that other might be doing:
+Here are the things that I purposely don’t do that others might be doing.
 
-- I don’t care about my dot files. I have a super basic configuration to just show the branch that I’m on Git, but after my latest fresh reinstall of the system I didn’t bother reconfiguring my bash environment, and it seams that I’m fine with it for now. But I see myself login back to this one day
-- I try to avoid Brew like fire. The only time I install something through it I do it to install wget. I don’t use Brew because I don’t like CLI that install things without a visual interface or cue of what goes where. Normally the Unix system is very ease going when it comes to installing things, but annoyingly uninstalling is a very poor experience. Same goes with NPM and installing things globally - I install globally only the bare minimum, which in my case is Nodemon, and my 2 tools that I created ([express-generator-dg](https://www.npmjs.com/package/express-generator-dg), [env-auto](https://www.npmjs.com/package/env-auto)) since life without them would be painful.
-- The cool drop down feature of iTerm2. Yes I don’t use this amazing feature where you can assign a hot key to iTerm2 that once hit it will slide down a terminal window no matter where you are in the system. Cool feature that I used once back in the days, and it never stick with me. I just don’t have the need. Plus I always have a iTerm2 session open in full screen so when I need I just go there and do my thing, plus once I go to the terminal I normal stay there for a longer time then I always anticipate - mmm that black void ;)
+## Dot Files
 
-This are some points that my friend [@sadovnychyi](https://github.com/sadovnychyi) pointed out so for sure I won’t be able to include them all or thing of all the possibilities. So if I didn't mention something here is probably because I had a reason and the reason is that I’m not in pain by not using them. Of course it is possible that I might not know all the possibilities out there, in this case feel free to ping me on Twitter @[davidgatti](https://twitter.com/dawidgatti) and let me know what you do that I didn’t mention so I can check it out :)
+I don’t care about my dot files. I had a super basic configuration that just shows on which branch I’m on Git. But after my latest fresh reinstall of the system, I didn’t bother to reconfigure my bash environment, and I’m fine with that for now. Right now I don’t feel any pain by not having this feature in the terminal - so for now I’m not bordering with configuring my bash environment.
+
+## Brew
+
+I try to avoid Brew like fire. I only use it to install wget.
+
+I don’t use Brew because I don’t like CLIs that install things without a visual interface or a clue as to what goes where. The Unix system is typically very easygoing when it comes to installing things, but it's not so great when you want to uninstall apps.
+
+I feel the same way about NPM and installing things globally. I only install globally when I absolutely have to. In my case, that's Nodemon and the two tools I created ([express-generator-dg](https://www.npmjs.com/package/express-generator-dg), [env-auto](https://www.npmjs.com/package/env-auto)), since life without them would be painful.
+
+## iTerm2 drop-down
+
+This is the cool drop-down feature of iTerm2. I don’t use this amazing feature that allows you to assign a hot key to iTerm2 that slides down a terminal window, no matter where you are in the system. It's a cool feature that I did use back in the day, but it never stuck with me. I just don’t have the need. Plus, I always have an iTerm2 session open in full screen, so when I need it, I can just go there and do my thing. Once I go to the terminal, I usually stay there for longer than I anticipate...Mmm, that black void 😉.
+
+# To sum it up
+
+These are some things that my friend [@sadovnychyi](https://github.com/sadovnychyi) pointed out, and I'm not able to include all of them or think of all of the possibilities. So if I left something out, it's probably because not using them hasn't caused problems to me. Of course, it's possible that I might not be aware of all of the possibilities out there. In that case, feel free to ping me on Twitter [@davidgatti](https://twitter.com/dawidgatti) and let me know what you do that I didn’t mention so I can check it out 😌.
