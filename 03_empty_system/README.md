@@ -1,5 +1,9 @@
 # Keeping the system as empty as possible
 
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/03_empty_system/images/empty_desctop.png">
+</div>
+
 As I mentioned in the Backup section, I keep my files and apps to a minimum. I only have the tools that I need for my work, and I use the system's built-in apps as much as possible.
 
 So, fewer apps equal more resources to do my job. These are the apps I have on my system at this moment:
