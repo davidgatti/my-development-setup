@@ -1,5 +1,9 @@
 # My Virtual Box
 
+<div align="center">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/VirtualBox.png">
+</div>
+
 You probably wouldn’t be surprised to hear that I don’t run code from my main operating system, which in my case is macOS. All of the code is run from Debian, which is inside a Virtual Box installation. This allows me to keep my main system clean of any servers and weird things that I might have to install for development.
 
 Inside Debian, I use Docker for further organization. In the beginning, I tried to code my apps inside Docker. But, after few months, I came to the conclusion that the benefit was minimal and the overhead involved in making small changes was too much, so I decided to drop Docker for this particular scenario, but keep it to run servers like SQL-type apps, Redis, and other things. This way, I can have multiple versions for testing in a very easy-to-manage way.
