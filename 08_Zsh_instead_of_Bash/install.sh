@@ -112,6 +112,8 @@ main()
 	rm ~/.bash_history 2> /dev/null
 	rm ~/.bash_logout 2> /dev/null
 	rm ~/.bashrc 2> /dev/null
+	rm ~/.bash_sessions 2> /dev/null
+	rm ~/.sh_history 2> /dev/null
 
 }
 
