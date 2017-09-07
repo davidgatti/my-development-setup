@@ -61,7 +61,7 @@ main()
 	#
 	if [ $CHECK_ZSH_INSTALLED -ge 1 ]; then
 		printf "${YELLOW}Zsh is already installed, nothing to do.\n"
-		exit
+		#exit
 	fi
 
 	#
