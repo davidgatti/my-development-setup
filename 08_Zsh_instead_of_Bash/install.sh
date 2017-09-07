@@ -59,7 +59,7 @@ main()
 	#
 	#	Check to see if Zsh is already installed
 	#
-	if [ !$CHECK_ZSH_INSTALLED -ge 1 ]; then
+	if [ ! $CHECK_ZSH_INSTALLED -ge 1 ]; then
 		sudo apt-get -y install zsh
 	fi
 
