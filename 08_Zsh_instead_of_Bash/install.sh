@@ -1,6 +1,20 @@
 main()
 {
 	#
+	#	Be nice and say something :)
+	#
+	printf "${YELLOW}"
+	echo ''
+	echo '    ____             __   ___  _____        __  '
+	echo '   / __ )____ ______/ /_ |__ \/__  /  _____/ /_ '
+	echo '  / __  / __ `/ ___/ __ \__/ /  / /  / ___/ __ \'
+	echo ' / /_/ / /_/ (__  ) / / / __/  / /__(__  ) / / /'
+	echo '/_____/\__,_/____/_/ /_/____/ /____/____/_/ /_/ '
+	echo ''
+	echo ''
+	printf "${NORMAL}"
+
+	#
 	#	By default we assume the terminal doesn't support colors
 	#
 	RED=""
@@ -53,20 +67,6 @@ main()
 	#	Clean the memory
 	#
 	unset CHECK_ZSH_INSTALLED
-
-	#
-	#	Be nice and say something :)
-	#
-	printf "${YELLOW}"
-	echo ''
-	echo '    ____             __   ___  _____        __  '
-	echo '   / __ )____ ______/ /_ |__ \/__  /  _____/ /_ '
-	echo '  / __  / __ `/ ___/ __ \__/ /  / /  / ___/ __ \'
-	echo ' / /_/ / /_/ (__  ) / / / __/  / /__(__  ) / / /'
-	echo '/_____/\__,_/____/_/ /_/____/ /____/____/_/ /_/ '
-	echo ''
-	echo ''
-	printf "${NORMAL}"
 }
 
 main
