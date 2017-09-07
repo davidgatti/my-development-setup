@@ -89,6 +89,15 @@ main()
 	#
 	chsh -s /bin/zsh
 
+################################################################################
+
+	#
+	#	Removing unnecessary Bash files
+	#
+	rm ~/.bash_history 2> /dev/null
+	rm ~/.bash_logout 2> /dev/null
+	rm ~/.bashrc 2> /dev/null
+
 }
 
 main
