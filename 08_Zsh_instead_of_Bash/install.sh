@@ -71,13 +71,28 @@ main()
 ################################################################################
 
 	#
+	#	Get the name of the logged in user
+	#
+	USER_NAME=$(whoami)
+
+	#
+	#	Get the home path for the logged in user
+	#
+	HOME_PATH=$(getent passwd $USER_NAME | cut -d: -f6)
+
+	#
+	#	Remove the previous config file, so we know we start from scratch
+	#
+	rm ~/.zshrc 2> /dev/null
+
+	#
 	#	Create the .zshrc file and add all the settings
 	#
 	echo 'HISTFILE=~/.histfile' >> ~/.zshrc
 	echo 'HISTSIZE=1000' >> ~/.zshrc
 	echo 'SAVEHIST=1000' >> ~/.zshrc
 	echo 'bindkey -v' >> ~/.zshrc
-	echo 'zstyle :compinstall filename '/home/davidgatti/.zshrc'' >> ~/.zshrc
+	echo 'zstyle :compinstall filename '$HOME_PATH/.zshrc'' >> ~/.zshrc
 	echo 'autoload -Uz compinit' >> ~/.zshrc
 	echo 'compinit' >> ~/.zshrc
 	echo "PROMPT='%F{red}%n%f // %F{blue}%m%f // %F{yellow}%1~%f : '" >> ~/.zshrc
