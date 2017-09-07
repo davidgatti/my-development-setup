@@ -1,12 +1,26 @@
 main()
 {
 	#
-	#	Use colors, but only if connected to a terminal, and that terminal
-	#	supports them.
+	#	By default we assume the terminal doesn't support colors
+	#
+	RED=""
+	GREEN=""
+	YELLOW=""
+	BLUE=""
+	BOLD=""
+	NORMAL=""
+
+	#
+	#	Check  if we are connected to a terminal, and that terminal
+	#	supports colors.
 	#
 	if which tput >/dev/null 2>&1; then
 			ncolors=$(tput colors)
 	fi
+
+	#
+	#	Set the colors if we can
+	#
 	if [ -t 1 ] && [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
 		RED="$(tput setaf 1)"
 		GREEN="$(tput setaf 2)"
@@ -14,13 +28,6 @@ main()
 		BLUE="$(tput setaf 4)"
 		BOLD="$(tput bold)"
 		NORMAL="$(tput sgr0)"
-	else
-		RED=""
-		GREEN=""
-		YELLOW=""
-		BLUE=""
-		BOLD=""
-		NORMAL=""
 	fi
 
 	#
@@ -32,7 +39,8 @@ main()
 	#
 	#	Be nice and say something :)
 	#
-	printf "${GREEN}"
+	printf "${YELLOW}"
+	echo ''
 	echo '    ____             __   ___  _____        __  '
 	echo '   / __ )____ ______/ /_ |__ \/__  /  _____/ /_ '
 	echo '  / __  / __ `/ ___/ __ \__/ /  / /  / ___/ __ \'
