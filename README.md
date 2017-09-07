@@ -16,7 +16,8 @@ Table of contents
 - [My Custom domains setup](https://github.com/davidgatti/my-development-setup/tree/master/05_custom_domains)
 - [My security approach](https://github.com/davidgatti/my-development-setup/tree/master/06_my_security)
 - [My iTerm2 Setup](https://github.com/davidgatti/my-development-setup/tree/master/07_iTerm2_setup)
-- [What I don't do](https://github.com/davidgatti/my-development-setup/tree/master/08_what_I_dont_that_others_do)
+- [Zsh instead of Bash](https://github.com/davidgatti/my-development-setup/tree/master/08_Zsh_instead_of_Bash)
+- [What I don't do](https://github.com/davidgatti/my-development-setup/tree/master/09_what_I_dont_that_others_do)
 
 # The End
 
