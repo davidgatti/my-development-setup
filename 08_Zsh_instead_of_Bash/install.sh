@@ -30,6 +30,12 @@ main()
 		NORMAL="$(tput sgr0)"
 	fi
 
+	#
+	#	Only enable exit-on-error after the non-critical colorization stuff,
+	#	which may fail on systems lacking tput or terminfo
+	#
+	set -e
+
 ################################################################################
 
 	printf "${YELLOW}"
@@ -46,12 +52,6 @@ main()
 ################################################################################
 
 	#
-	#	Only enable exit-on-error after the non-critical colorization stuff,
-	#	which may fail on systems lacking tput or terminfo
-	#
-	set -e
-
-	#
 	#	Find out if Zsh is already installed
 	#
 	CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
@@ -59,9 +59,8 @@ main()
 	#
 	#	Check to see if Zsh is already installed
 	#
-	if [ $CHECK_ZSH_INSTALLED -ge 1 ]; then
-		printf "${YELLOW}Zsh is already installed, nothing to do.\n"
-		#exit
+	if [ !$CHECK_ZSH_INSTALLED -ge 1 ]; then
+		sudo apt-get -y install zsh
 	fi
 
 	#
@@ -69,24 +68,26 @@ main()
 	#
 	unset CHECK_ZSH_INSTALLED
 
-	# sudo apt-get install zsh
+################################################################################
 
-	# chsh -s /bin/zsh
+	#
+	#	Create the .zshrc file and add all the settings
+	#
+	echo 'HISTFILE=~/.histfile' >> ~/.zshrc
+	echo 'HISTSIZE=1000' >> ~/.zshrc
+	echo 'SAVEHIST=1000' >> ~/.zshrc
+	echo 'bindkey -v' >> ~/.zshrc
+	echo 'zstyle :compinstall filename '/home/davidgatti/.zshrc'' >> ~/.zshrc
+	echo 'autoload -Uz compinit' >> ~/.zshrc
+	echo 'compinit' >> ~/.zshrc
+	echo "PROMPT='%F{red}%n%f // %F{blue}%m%f // %F{yellow}%1~%f : '" >> ~/.zshrc
 
-cat >test.txt <<EOL
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-bindkey -v
+################################################################################
 
-zstyle :compinstall filename '/home/davidgatti/.zshrc'
-
-autoload -Uz compinit
-compinit
-
-PROMPT='%F{red}%n%f // %F{blue}%m%f // %F{yellow}%1~%f : '
-EOL
-
+	#
+	#	Enable Zsh as the default login shell
+	#
+	chsh -s /bin/zsh
 
 }
 
