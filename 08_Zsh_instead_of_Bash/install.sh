@@ -68,6 +68,26 @@ main()
 	#	Clean the memory
 	#
 	unset CHECK_ZSH_INSTALLED
+
+	# sudo apt-get install zsh
+
+	# chsh -s /bin/zsh
+
+cat >test.txt <<EOL
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+
+zstyle :compinstall filename '/home/davidgatti/.zshrc'
+
+autoload -Uz compinit
+compinit
+
+PROMPT='%F{red}%n%f // %F{blue}%m%f // %F{yellow}%1~%f : '
+EOL
+
+
 }
 
 main
