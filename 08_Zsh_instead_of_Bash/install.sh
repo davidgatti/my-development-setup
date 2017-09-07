@@ -37,6 +37,24 @@ main()
 	set -e
 
 	#
+	#	Find out if Zsh is already installed
+	#
+	CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
+
+	#
+	#
+	#
+	if [ $CHECK_ZSH_INSTALLED -ge 1 ]; then
+		printf "${YELLOW}Zsh is already installed, nothing to do.\n"
+		exit
+	fi
+
+	#
+	#	Clean the memory
+	#
+	unset CHECK_ZSH_INSTALLED
+
+	#
 	#	Be nice and say something :)
 	#
 	printf "${YELLOW}"
