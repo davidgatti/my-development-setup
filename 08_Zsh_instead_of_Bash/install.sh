@@ -1,20 +1,6 @@
 main()
 {
 	#
-	#	Be nice and say something :)
-	#
-	printf "${YELLOW}"
-	echo ''
-	echo '    ____             __   ___  _____        __  '
-	echo '   / __ )____ ______/ /_ |__ \/__  /  _____/ /_ '
-	echo '  / __  / __ `/ ___/ __ \__/ /  / /  / ___/ __ \'
-	echo ' / /_/ / /_/ (__  ) / / / __/  / /__(__  ) / / /'
-	echo '/_____/\__,_/____/_/ /_/____/ /____/____/_/ /_/ '
-	echo ''
-	echo ''
-	printf "${NORMAL}"
-
-	#
 	#	By default we assume the terminal doesn't support colors
 	#
 	RED=""
@@ -44,6 +30,21 @@ main()
 		NORMAL="$(tput sgr0)"
 	fi
 
+################################################################################
+
+	printf "${YELLOW}"
+	echo ''
+	echo '    ____             __   ___  _____        __  '
+	echo '   / __ )____ ______/ /_ |__ \/__  /  _____/ /_ '
+	echo '  / __  / __ `/ ___/ __ \__/ /  / /  / ___/ __ \'
+	echo ' / /_/ / /_/ (__  ) / / / __/  / /__(__  ) / / /'
+	echo '/_____/\__,_/____/_/ /_/____/ /____/____/_/ /_/ '
+	echo ''
+	echo ''
+	printf "${NORMAL}"
+
+################################################################################
+
 	#
 	#	Only enable exit-on-error after the non-critical colorization stuff,
 	#	which may fail on systems lacking tput or terminfo
@@ -56,7 +57,7 @@ main()
 	CHECK_ZSH_INSTALLED=$(grep /zsh$ /etc/shells | wc -l)
 
 	#
-	#
+	#	Check to see if Zsh is already installed
 	#
 	if [ $CHECK_ZSH_INSTALLED -ge 1 ]; then
 		printf "${YELLOW}Zsh is already installed, nothing to do.\n"
