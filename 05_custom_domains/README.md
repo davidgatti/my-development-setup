@@ -97,3 +97,9 @@ server {
 ```
 
 The only differences between the files are the `server_name` option and the port at which the site is running. Here, you see `3000`, but you can have multiple sites on any port you like. After you reload the Nginx configuration, Nginx will forward the traffic to the right internal address.
+
+# Ginnx will do it for you
+
+Now that you know that basic how to setup Nginx, it be best if there was an automated tool that could create a configuration file automatically, right? Well I did one 😅 called [ginnx](https://www.npmjs.com/package/ginnx). Every time you'll run it will ask you for the domain of the site that you want to use and the port on which is should run. With this information the configuration file will be automatically created, the Nginx server restarted, and a new server be running.
+
+This tool makes my life easier, and I hope it will help you to 😀.
