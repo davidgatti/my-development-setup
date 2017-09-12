@@ -86,16 +86,14 @@ main()
 	rm ~/.zshrc 2> /dev/null
 
 	#
-	#	Create the .zshrc file and add all the settings
+	#	The command to get the configuration file
 	#
-	echo 'HISTFILE=~/.histfile' >> ~/.zshrc
-	echo 'HISTSIZE=1000' >> ~/.zshrc
-	echo 'SAVEHIST=1000' >> ~/.zshrc
-	echo 'bindkey -v' >> ~/.zshrc
-	echo 'zstyle :compinstall filename '$HOME_PATH/.zshrc'' >> ~/.zshrc
-	echo 'autoload -Uz compinit' >> ~/.zshrc
-	echo 'compinit' >> ~/.zshrc
-	echo "PROMPT='%F{red}%n%f // %F{blue}%m%f // %F{yellow}%1~%f : '" >> ~/.zshrc
+	curl_cmd="curl 'https://raw.githubusercontent.com/davidgatti/my-development-setup/master/08_Zsh_instead_of_Bash/zshrc' >> ~/.zshrc"
+
+	#
+	#	Executing the Curl command
+	#
+	eval $curl_cmd
 
 ################################################################################
 
