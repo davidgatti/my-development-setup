@@ -8,6 +8,11 @@ autoload -Uz compinit
 compinit
 
 #
+#	Add the functionality to hit ctrl+r to search CLI history
+#
+bindkey "^R" history-incremental-search-backward
+
+#
 #	If the PROMPT_SUBST option is set, the prompt string is first subjected to
 # 	parameter expansion, command substitution and arithmetic expansion.
 #
@@ -20,4 +25,4 @@ function parse_git_branch {
    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
 
-PROMPT='[%F{red}%n%f] [%F{blue}%m%f] [%F{yellow}%1~%f] $(parse_git_branch): '
+PROMPT=' > [%F{red}%n%f] [%F{blue}%m%f] [%F{yellow}%1~%f] $(parse_git_branch): '
