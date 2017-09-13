@@ -79,7 +79,17 @@ main()
 	rm ~/.bash_sessions 2> /dev/null
 	rm ~/.sh_history 2> /dev/null
 
+	#
+	#	Remove the previous config file, so we know we start from scratch
+	#
+	rm ~/.zshrc 2> /dev/null
+
 ################################################################################
+
+	#
+	#	Download the configuration file
+	#
+	curl -fsSL 'https://raw.githubusercontent.com/davidgatti/my-development-setup/master/08_Zsh_instead_of_Bash/zshrc' >> ~/.zshrc
 
 	#
 	#	Get the name of the logged in user
@@ -92,20 +102,9 @@ main()
 	HOME_PATH=$(getent passwd $USER_NAME | cut -d: -f6)
 
 	#
-	#	Remove the previous config file, so we know we start from scratch
-	#
-	rm ~/.zshrc 2> /dev/null
-
-	#
-	#	Download the configuration file
-	#
-	curl 'https://raw.githubusercontent.com/davidgatti/my-development-setup/master/08_Zsh_instead_of_Bash/zshrc' >> ~/.zshrc
-
-	#
 	#	Add a dynamic entry
 	#
 	echo 'zstyle :compinstall filename '$HOME_PATH/.zshrc'' >> ~/.zshrc
-
 }
 
 main
