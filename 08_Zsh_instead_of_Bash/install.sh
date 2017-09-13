@@ -71,6 +71,17 @@ main()
 ################################################################################
 
 	#
+	#	Removing unnecessary Bash files
+	#
+	rm ~/.bash_history 2> /dev/null
+	rm ~/.bash_logout 2> /dev/null
+	rm ~/.bashrc 2> /dev/null
+	rm ~/.bash_sessions 2> /dev/null
+	rm ~/.sh_history 2> /dev/null
+
+################################################################################
+
+	#
 	#	Get the name of the logged in user
 	#
 	USER_NAME=$(whoami)
@@ -94,17 +105,6 @@ main()
 	#	Add a dynamic entry
 	#
 	echo 'zstyle :compinstall filename '$HOME_PATH/.zshrc'' >> ~/.zshrc
-
-################################################################################
-
-	#
-	#	Removing unnecessary Bash files
-	#
-	rm ~/.bash_history 2> /dev/null
-	rm ~/.bash_logout 2> /dev/null
-	rm ~/.bashrc 2> /dev/null
-	rm ~/.bash_sessions 2> /dev/null
-	rm ~/.sh_history 2> /dev/null
 
 }
 
