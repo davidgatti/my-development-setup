@@ -73,16 +73,17 @@ main()
 	#
 	#	Remove the previous config file, so we know we start from scratch
 	#
-	rm ~/.zshrc &&
+	rm ~/.zshrc 2> /dev/null
 
 	#
 	#	Removing unnecessary Bash files
 	#
-	rm ~/.bash_history 2> /dev/null &&
-	rm ~/.bash_logout 2> /dev/null &&
-	rm ~/.bashrc 2> /dev/null &&
-	rm ~/.bash_sessions 2> /dev/null &&
-	rm ~/.sh_history 2> /dev/null &&
+	rm ~/.bash_history 2> /dev/null
+	rm ~/.bash_logout 2> /dev/null
+	rm ~/.bashrc 2> /dev/null
+	rm ~/.bash_sessions 2> /dev/null
+	rm ~/.sh_history 2> /dev/null
+	rm ~/.profile 2> /dev/null
 
 ################################################################################
 
