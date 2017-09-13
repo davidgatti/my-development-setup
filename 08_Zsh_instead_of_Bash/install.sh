@@ -103,13 +103,6 @@ main()
 ################################################################################
 
 	#
-	#	Enable Zsh as the default login shell
-	#
-	chsh -s /bin/zsh
-
-################################################################################
-
-	#
 	#	Removing unnecessary Bash files
 	#
 	rm ~/.bash_history 2> /dev/null
