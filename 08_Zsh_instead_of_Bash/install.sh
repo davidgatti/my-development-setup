@@ -86,14 +86,9 @@ main()
 	rm ~/.zshrc 2> /dev/null
 
 	#
-	#	The command to get the configuration file
+	#	Download the configuration file
 	#
-	curl_cmd="curl 'https://raw.githubusercontent.com/davidgatti/my-development-setup/master/08_Zsh_instead_of_Bash/zshrc' >> ~/.zshrc"
-
-	#
-	#	Executing the Curl command
-	#
-	eval $curl_cmd
+	curl 'https://raw.githubusercontent.com/davidgatti/my-development-setup/master/08_Zsh_instead_of_Bash/zshrc' >> ~/.zshrc
 
 	#
 	#	Add a dynamic entry
