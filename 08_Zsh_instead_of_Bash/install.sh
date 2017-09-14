@@ -100,6 +100,11 @@ main()
 	#	Add a dynamic entry
 	#
 	echo 'zstyle :compinstall filename '$HOME_PATH/.zshrc'' >> ~/.zshrc
+
+	#
+	#	Switch to ZSH
+	#
+	zsh
 }
 
 main
