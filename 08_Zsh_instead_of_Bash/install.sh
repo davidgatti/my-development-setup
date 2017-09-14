@@ -30,12 +30,6 @@ main()
 		NORMAL="$(tput sgr0)"
 	fi
 
-	#
-	#	Only enable exit-on-error after the non-critical colorization stuff,
-	#	which may fail on systems lacking tput or terminfo
-	#
-	set -e
-
 ################################################################################
 
 	printf "${YELLOW}"
