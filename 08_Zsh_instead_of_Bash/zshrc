@@ -30,4 +30,4 @@ function parse_git_branch {
    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
 
-PROMPT=' > [%F{red}%n%f] [%F{blue}%m%f] [%F{yellow}%1~%f] $(parse_git_branch): '
+PROMPT=' > [%F{yellow}%n%f] [%F{yellow}%m%f] [%F{yellow}%1~%f] [%F{yellow}$(parse_git_branch)%f]: '
