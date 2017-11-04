@@ -60,13 +60,15 @@ Now you can start your server with the window where you can log-in to the machin
 
 ```
 # The fixed IP
-auto eth1
-iface eth1 inet static
+auto enp0s8
+iface enp0s8 inet static
 address 192.168.56.100
 netmask 255.255.255.0
 network 192.168.56.0
 broadcast 192.168.56.255
 ```
+
+**WARNING**: where did the eth0, eth1 go? Read here more about [Predictable Network Interface Names](https://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/) to find out what changed in Debian 9
 
 Save the file and restart the Virtual Machine. You should be able to access the server on the `192.168.56.100` IP, no matter which network you're using.
 
