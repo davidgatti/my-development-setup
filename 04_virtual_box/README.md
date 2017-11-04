@@ -68,7 +68,7 @@ network 192.168.56.0
 broadcast 192.168.56.255
 ```
 
-**WARNING**: where did the eth0, eth1 go? Read here more about [Predictable Network Interface Names](https://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/) to find out what changed in Debian 9
+**WARNING**: where did the eth0, eth1 go? Read here more about [Predictable Network Interface Names](https://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/) to find out what changed in Debian 9. Also do `ls /sys/class/net/` to find out all your network cards.
 
 Save the file and restart the Virtual Machine. You should be able to access the server on the `192.168.56.100` IP, no matter which network you're using.
 
