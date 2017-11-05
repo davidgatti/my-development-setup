@@ -14,5 +14,5 @@
 
 # Docker Images that I use
 
-1. sudo docker pull postgres
-1. sudo docker pull redis
+1. docker pull postgres
+1. docker pull redis
