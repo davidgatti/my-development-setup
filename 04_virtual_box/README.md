@@ -80,6 +80,12 @@ Now the question is this: How do you put code that you've written to the Virtual
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/6.png">
 </div>
 
+1. Install kernel headers (installer needs them to build the kernel module):
+
+	```
+	sudo apt-get install -y linux-headers-$(uname -r)
+	```
+1. Restart the system
 1. Start the virtual system with a regular window (not windowless)
 1. Log-in in to the system
 1. From the virtual machine window select Devices > Insert Guest Additions CD Image
@@ -87,12 +93,6 @@ Now the question is this: How do you put code that you've written to the Virtual
 
 	```
 	sudo mount /dev/cdrom /media/cdrom
-	```
-
-1. Install kernel headers (installer needs them to build the kernel module):
-
-	```
-	sudo apt-get install -y linux-headers-$(uname -r)
 	```
 
 1. Go to the mounted CD-ROM
