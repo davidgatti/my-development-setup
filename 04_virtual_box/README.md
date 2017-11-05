@@ -83,8 +83,9 @@ Now the question is this: How do you put code that you've written to the Virtual
 1. Install kernel headers (installer needs them to build the kernel module):
 
 	```
-	sudo apt-get install -y linux-headers-$(uname -r)
+	sudo apt-get install -y build-essential linux-headers-$(uname -r)
 	```
+
 1. Restart the system
 1. Start the virtual system with a regular window (not windowless)
 1. Log-in in to the system
