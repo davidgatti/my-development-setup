@@ -6,3 +6,13 @@
 1. `apt update`
 1. `apt install docker-engine`
 
+### Manage Docker without Sudo
+
+1. sudo groupadd docker
+1. sudo gpasswd -a $USER docker
+1. newgrp docker
+
+# Docker Images that I use
+
+1. sudo docker pull postgres
+1. sudo docker pull redis
