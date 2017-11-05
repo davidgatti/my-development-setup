@@ -81,6 +81,7 @@ Now the question is this: How do you put code that you've written to the Virtual
 </div>
 
 1. Start the virtual system with a regular window (not windowless)
+1. Log-in in to the system
 1. From the virtual machine window select Devices > Insert Guest Additions CD Image
 1. Mount the Guest Additions CD in your host system.
 
