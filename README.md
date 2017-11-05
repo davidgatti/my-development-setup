@@ -5,20 +5,7 @@ If you Google "[My Development Setup](https://www.google.com/search?q=My+Develop
 
 # Let's start
 
-Personally, I’m a very organized individual. I believe that spending the extra time in the beginning will save me a huge amount of time down the road, so having a well-designed development environment is so important to me.
-
-Table of contents
-
-- [My Computer](https://github.com/davidgatti/my-development-setup/tree/master/01_my_computer)
-- [How I backup my data](https://github.com/davidgatti/my-development-setup/tree/master/02_backups)
-- [Keep the system clean](https://github.com/davidgatti/my-development-setup/tree/master/03_empty_system)
-- [My Virtual Box setup](https://github.com/davidgatti/my-development-setup/tree/master/04_virtual_box)
-- [My Custom domains setup](https://github.com/davidgatti/my-development-setup/tree/master/05_custom_domains)
-- [My security approach](https://github.com/davidgatti/my-development-setup/tree/master/06_my_security)
-- [My iTerm2 Setup](https://github.com/davidgatti/my-development-setup/tree/master/07_iTerm2_setup)
-- [Zsh instead of Bash](https://github.com/davidgatti/my-development-setup/tree/master/08_Zsh_instead_of_Bash)
-- [The Server Environment](https://github.com/davidgatti/my-development-setup/tree/master/09_the_server_environment)
-- [What I don't do](https://github.com/davidgatti/my-development-setup/tree/master/10_what_I_dont_that_others_do)
+Personally, I’m a very organized individual. I believe that spending the extra time in the beginning will save me a huge amount of time down the road, so having a well-designed development environment is so important to me. Check out the folder structure of this repo and see if there is something useful.
 
 # The End
 
