@@ -12,3 +12,8 @@ in progress...
 	]
 }
 ```
+
+# Packages that I use
+
+1. GitGutter
+1. DockBlockr
