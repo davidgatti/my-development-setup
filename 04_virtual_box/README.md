@@ -129,15 +129,6 @@ Now the question is this: How do you put code that you've written to the Virtual
 </div>
 
 9. Click OK.
-10. Now, boot your virtual machine
-11. Create a new folder wherewer you like with mkdir
-12. Once the new fodler is done, type the following:
-
-```
-sudo mount -t vboxsf folder_name path_to_mount_point
-```
-
-Where `folder_name` is the name that you gave on the Settings page, and path_to_mount_point is the path to the folder that you just created in your Virtual Box.
 
 ## Mount folders
 
