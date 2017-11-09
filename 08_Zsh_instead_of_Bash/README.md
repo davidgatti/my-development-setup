@@ -13,9 +13,3 @@ Bellow I created a script that will automatically perform the switch. Please tak
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/davidgatti/my-development-setup/master/08_Zsh_instead_of_Bash/install.sh)"
 ```
-
-# Enable ZSH as default login shell
-
-```
-chsh -s /bin/zsh
-```
