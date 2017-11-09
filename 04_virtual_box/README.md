@@ -123,12 +123,11 @@ Now the question is this: How do you put code that you've written to the Virtual
 6. From the drop down menu, select the folder that is on your macOS
 7. Name it hoewver you want, the name can be different form the folder name on your macOS
 8. Select Make Permanent if you have such option, so the folder will be alwasy mounted
+9. Click OK.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/8.png">
 </div>
-
-9. Click OK.
 
 ## Mount folders
 
