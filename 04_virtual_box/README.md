@@ -135,7 +135,7 @@ Now the question is this: How do you put code that you've written to the Virtual
 How to mount the folder from the host in to a folder inside VirtualBox:
 
 ```
-mount -t vboxsf NAME_OF_THE_FOLDER_YOU_SHARED ~/Documents -o uid=$(whoami) -o gid=$(whoami)
+sudo mount -t vboxsf NAME_OF_THE_FOLDER_YOU_SHARED ~/Documents -o uid=$(whoami) -o gid=$(whoami)
 ```
 
 ## How to enable symlink in a shared folder
