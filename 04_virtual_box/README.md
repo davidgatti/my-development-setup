@@ -123,28 +123,30 @@ Now the question is this: How do you put code that you've written to the Virtual
 6. From the drop down menu, select the folder that is on your macOS
 7. Name it hoewver you want, the name can be different form the folder name on your macOS
 8. Select Make Permanent if you have such option, so the folder will be alwasy mounted
+9. Click OK.
 
 <div align="center">
 	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/8.png">
 </div>
-
-9. Click OK.
-10. Now, boot your virtual machine
-11. Create a new folder wherewer you like with mkdir
-12. Once the new fodler is done, type the following:
-
-```
-sudo mount -t vboxsf folder_name path_to_mount_point
-```
-
-Where `folder_name` is the name that you gave on the Settings page, and path_to_mount_point is the path to the folder that you just created in your Virtual Box.
 
 ## Mount folders
 
 How to mount the folder from the host in to a folder inside VirtualBox:
 
 ```
-mount -t vboxsf NAME_OF_THE_FOLDER_YOU_SHARED /home/$(users)/Documents -o uid=$(users) -o gid=$(users)
+sudo mount -t vboxsf NAME_OF_THE_FOLDER_YOU_SHARED ~/Documents -o uid=$(whoami) -o gid=$(whoami)
+```
+
+## Make a mounting script
+
+Evry time you restart your virtual ssytem you'd have to mount the folder each time, to make my life easier I have a bash script that I can run each time to mount my folder.
+
+```Bash
+touch mount.sh && \
+chmod +x mount.sh && \
+echo '#!/bin/bash' > mount.sh
+echo '' >> mount.sh
+echo 'sudo mount -t vboxsf NAME_OF_THE_FOLDER_YOU_SHARED ~/Documents -o uid=$(whoami) -o gid=$(whoami)' >> mount.sh
 ```
 
 ## How to enable symlink in a shared folder
@@ -156,3 +158,5 @@ Type this in your host system, the system that have VirtualBox installed
 ```
 VBoxManage setextradata "NAME_OF_YOUR_VM" VBoxInternal2/SharedFoldersEnableSymlinksCreate/NAME_OF_THE_SHARED_FOLDER 1
 ```
+
+And then restart your virtual machine.

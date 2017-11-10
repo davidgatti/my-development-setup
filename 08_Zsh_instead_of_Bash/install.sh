@@ -102,6 +102,11 @@ main()
 	echo 'zstyle :compinstall filename '$HOME_PATH/.zshrc'' >> ~/.zshrc
 
 	#
+	#	Enable ZSH as default login shell
+	#
+	chsh -s /bin/zsh
+	
+	#
 	#	Switch to ZSH
 	#
 	zsh
