@@ -153,10 +153,11 @@ echo 'sudo mount -t vboxsf NAME_OF_THE_FOLDER_YOU_SHARED ~/Documents -o uid=$(wh
 
 By default, when you share a folder from your host machine, symlinking is not supported. This is okay most of the time, but with NodeJS, for example, when you install a module using NPM, symlinking is crucial. In this case, the line below allows you to enable symlinking in your shared folder.
 
-Type this in your host system, the system that have VirtualBox installed
+1. Shut down your VM
+2. Type this in your host system, the system that have VirtualBox installed
 
 ```
 VBoxManage setextradata "NAME_OF_YOUR_VM" VBoxInternal2/SharedFoldersEnableSymlinksCreate/NAME_OF_THE_SHARED_FOLDER 1
 ```
 
-And then restart your virtual machine.
+3. Tunr on the VM again.
