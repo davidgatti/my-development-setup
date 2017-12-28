@@ -8,6 +8,11 @@ autoload -Uz compinit
 compinit
 
 #
+#	Add the Bin folder where we keep our custom Bash Scripts
+#
+export PATH=$PATH:~/.bin
+
+#
 #	Enable basic mouse support
 #
 alias nano='nano --mouse'
