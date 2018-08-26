@@ -1,4 +1,4 @@
-# Me basic Sublime Text 3 Settings
+# My basic Sublime Text 3 Settings
 
 file name: `NAME.sublime-workspace`
 
