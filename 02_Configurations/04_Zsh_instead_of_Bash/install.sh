@@ -84,7 +84,7 @@ main()
 	#
 	#	Download the configuration file
 	#
-	curl -fsSL "https://raw.githubusercontent.com/davidgatti/my-development-setup/master/08_Zsh_instead_of_Bash/zshrc" >> ~/.zshrc
+	curl -fsSL "https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/04_Zsh_instead_of_Bash/zshrc" >> ~/.zshrc
 
 	#
 	#	Get the name of the logged in user
