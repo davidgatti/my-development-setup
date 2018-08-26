@@ -1,7 +1,7 @@
 # My Virtual Box
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/VirtualBox.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/VirtualBox.png">
 </div>
 
 You probably wouldn’t be surprised to hear that I don’t run code from my main operating system, which in my case is macOS. All of the code is run from Debian, which is inside a Virtual Box installation. This allows me to keep my main system clean of any servers and weird things that I might have to install for development.
@@ -29,31 +29,31 @@ Thankfully, you can configure VirtualBox to have a fixed IP, no matter what netw
 Open VirtualBox and go to general Preference window. From there, select the Network tab and add a new card. Once added, select it and click the little screw driver icon.
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/1.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/1.png">
 </div>
 
 Now select the DHCP Server table, where you're going to uncheck the Enable Server option on the adapter view, next to the DHCP Server tab. You can either change the IP to one that you prefer, or remember the default.
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/2.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/2.png">
 </div>
 
 By the way, this won’t be the IP of the server when it runs. You'll set the IP in the next step.
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/3.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/3.png">
 </div>
 
 These are the general settings for VirtualBox, where you can edit the Network settings for your virtual machine. Once you open the settings page, go to the Network tab, select Adapter 1, and then the NAT option from the drop-down menu for the Attached to piton. This provides the virtual machine with internet access.
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/4.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/4.png">
 </div>
 
 On the Adapter 2 tab, choose Host-only Adapter from the drop down-menu for the Attached to option, and then in the Name option select the cart we created in the previous step.
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/5.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/5.png">
 </div>
 
 Now you can start your server with the window where you can log-in to the machine, and log in to edit the following file: `sudo nano /etc/network/interfaces`. At the end of the file you'll write the following:
@@ -77,7 +77,7 @@ Now the question is this: How do you put code that you've written to the Virtual
 ## Share host folder inside a Virtual Machine run from Virtual Box
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/6.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/6.png">
 </div>
 
 1. Install kernel headers (installer needs them to build the kernel module):
@@ -114,7 +114,7 @@ Now the question is this: How do you put code that you've written to the Virtual
 2. Create a folder on macOS that you want to share with your virtual machine
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/7.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/7.png">
 </div>
 
 3. Open the Settign section of your virtual machine
@@ -126,7 +126,7 @@ Now the question is this: How do you put code that you've written to the Virtual
 9. Click OK.
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/04_virtual_box/images/8.png">
+	<img src="https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/01_virtual_box/images/8.png">
 </div>
 
 ## Mount folders
