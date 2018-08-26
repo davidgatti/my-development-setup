@@ -11,5 +11,5 @@ Bellow I created a script that will automatically perform the switch. Please tak
 # Auto Installer
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/davidgatti/my-development-setup/master/08_Zsh_instead_of_Bash/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/davidgatti/my-development-setup/master/02_Configurations/04_Zsh_instead_of_Bash/install.sh)"
 ```
